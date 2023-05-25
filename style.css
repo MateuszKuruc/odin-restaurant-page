@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 300px;
+}
+
+.mainBody {
+    background-image: url('../img/background.jpg');
+    /* background-image: url('../img/3606.jpg'); */
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    height: 85vh;
+}
+
+.header {
+    height: 10vh;
+}
+
+.bodyText {
+    max-width: 40%;
+    line-height: 1.3rem;
+}
+
+.footer {
+    height: 5vh;
+}
