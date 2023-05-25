@@ -5,7 +5,7 @@ function createHeader() {
   header.classList.add("header");
 
   const restaurantName = document.createElement("h1");
-  restaurantName.innerHTML = "Sweets factory";
+  restaurantName.innerHTML = "Sweets Factory";
   header.appendChild(restaurantName);
 
   return header;
@@ -37,31 +37,38 @@ function createBody() {
   const mainBody = document.createElement("div");
   mainBody.classList.add("mainBody");
 
-  const bodyTitle = document.createElement("h1");
+  const restaurantName = document.createElement('h1');
+  restaurantName.innerHTML = 'Sweets Factory';
+  mainBody.appendChild(restaurantName);
+
+  const bodyTitle = document.createElement("h2");
   bodyTitle.innerHTML = "Fancy sweetness overload?";
   mainBody.appendChild(bodyTitle);
 
-//   const backgroundImg = document.createElement('img');
-//   backgroundImg.classList.add('background');
-//   backgroundImg.src = '../img/background.jpg';
-//   mainBody.appendChild(backgroundImg);
 
-    const bodyText = document.createElement('p');
-    bodyText.classList.add('bodyText')
-    bodyText.innerHTML = 'If you are longing for a sweet place where you can spend some time to boost your energy (and sugar!), look no further. Sweets Factory is here to fill cravings of each and every sweet tooth wandering aorund!'
-    mainBody.appendChild(bodyText);
+  
+  //   const backgroundImg = document.createElement('img');
+  //   backgroundImg.classList.add('background');
+  //   backgroundImg.src = '../img/background.jpg';
+  //   mainBody.appendChild(backgroundImg);
+
+  const bodyText = document.createElement("p");
+  bodyText.classList.add("bodyText");
+  bodyText.innerHTML =
+    "If you are longing for a sweet place where you can spend some time to boost your energy (and sugar), look no further! Sweets Factory is here to fill cravings of each and every sweet tooth wandering aorund!";
+  mainBody.appendChild(bodyText);
   return mainBody;
 }
 
 function createFooter() {
-    const footer = document.createElement('div');
-    footer.classList.add('footer');
-    
-    const signature = document.createElement('h4');
-    signature.innerHTML = 'Mateusz Kuruc 2023';
-    footer.appendChild(signature);
+  const footer = document.createElement("div");
+  footer.classList.add("footer");
 
-    return footer;
+  const signature = document.createElement("h4");
+  signature.innerHTML = "Mateusz Kuruc 2023";
+  footer.appendChild(signature);
+
+  return footer;
 }
 
 function startWebsite() {
