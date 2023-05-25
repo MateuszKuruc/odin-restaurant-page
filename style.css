@@ -11,7 +11,10 @@ body {
 }
 
 #content {
-  
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .background {
@@ -23,11 +26,6 @@ body {
     flex-direction: column;
     gap: 0.75rem;
     flex: 1;
-    background-image: url('../img/background.jpg');
-    /* background-image: url('../img/3606.jpg'); */
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    /* background-size: cover; */
     height: 83vh;
     padding-left: 5rem;
     padding-top: 3rem
@@ -65,7 +63,7 @@ body {
 }
 
 .bodyText {
-    max-width: 40%;
+    max-width: 30%;
     line-height: 1.5rem;
     padding-top: 0.75rem;
     font-size: 18px;
