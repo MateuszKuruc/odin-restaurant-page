@@ -45,13 +45,6 @@ function createBody() {
   bodyTitle.innerHTML = "Fancy sweetness overload?";
   mainBody.appendChild(bodyTitle);
 
-
-  
-  //   const backgroundImg = document.createElement('img');
-  //   backgroundImg.classList.add('background');
-  //   backgroundImg.src = '../img/background.jpg';
-  //   mainBody.appendChild(backgroundImg);
-
   const bodyText = document.createElement("p");
   bodyText.classList.add("bodyText");
   bodyText.innerHTML =
