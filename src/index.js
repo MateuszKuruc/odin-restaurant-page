@@ -1,4 +1,5 @@
-console.log('mati bambati');
 import startWebsite from "./website";
+import loadMenu from './menu';
 
 startWebsite();
+loadMenu();

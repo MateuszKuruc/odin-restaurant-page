@@ -48,7 +48,7 @@ function createBody() {
   const bodyText = document.createElement("p");
   bodyText.classList.add("bodyText");
   bodyText.innerHTML =
-    "If you are longing for a sweet place where you can spend some time to boost your energy (and sugar), look no further! Sweets Factory is here to fill cravings of each and every sweet tooth wandering aorund!";
+    "If you are longing for a sweet place where you can spend some time to boost your energy (and sugar), look no further! Sweets Factory is here to fill cravings of each and every sweet tooth wandering around!";
   mainBody.appendChild(bodyText);
   return mainBody;
 }
