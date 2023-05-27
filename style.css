@@ -78,3 +78,14 @@ body {
     align-items: center;
 }
 
+.item {
+    background-color: hsl(300, 100%, 25%, 70%);
+}
+
+/* .mainBody {
+    background-color: green;
+    width: 400px;
+    display: flex;
+    align-self: center;
+    margin: 50px;
+} */
