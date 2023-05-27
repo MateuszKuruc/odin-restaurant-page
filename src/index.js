@@ -1,5 +1,5 @@
 import startWebsite from "./website";
-import loadMenu from './menu';
+import loadMenu from "./menu";
 
 startWebsite();
 loadMenu();
