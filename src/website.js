@@ -1,13 +1,18 @@
 export default startWebsite;
 import loadMenu from "./menu";
+import loadContact from "./contact";
 
 function createHeader() {
   const header = document.createElement("div");
   header.classList.add("header");
 
+  const restaurantLogo = document.createElement("img");
+  restaurantLogo.src = "../img/sweet.png";
+
   const restaurantName = document.createElement("h1");
   restaurantName.innerHTML = "Sweets Factory";
 
+  header.appendChild(restaurantLogo);
   header.appendChild(restaurantName);
 
   return header;
@@ -30,6 +35,7 @@ function createNav() {
   const contactButton = document.createElement("button");
   contactButton.classList.add("btn-contact");
   contactButton.innerHTML = "Contact";
+  contactButton.addEventListener("click", loadContact);
 
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);
@@ -49,6 +55,9 @@ function getHomepage() {
   const mainBody = document.querySelector(".mainBody");
   mainBody.innerHTML = "";
 
+  const homeText = document.createElement("div");
+  homeText.classList.add("homeText");
+
   const restaurantName = document.createElement("h1");
   restaurantName.innerHTML = "Sweets Factory";
 
@@ -60,9 +69,11 @@ function getHomepage() {
   bodyText.innerHTML =
     "If you are longing for a sweet place where you can spend some time to boost your energy (and sugar), look no further! Sweets Factory is here to fill cravings of each and every sweet tooth wandering around!";
 
-  mainBody.appendChild(restaurantName);
-  mainBody.appendChild(bodyTitle);
-  mainBody.appendChild(bodyText);
+  homeText.appendChild(restaurantName);
+  homeText.appendChild(bodyTitle);
+  homeText.appendChild(bodyText);
+
+  mainBody.appendChild(homeText);
 }
 
 function createFooter() {
