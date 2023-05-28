@@ -17,16 +17,12 @@ body {
     /* height: 100vh; */
 }
 
-.background {
-   
-}
-
 .mainBody {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     flex: 1;
-    /* height: 83vh; */
+    min-height: 83vh;
     padding-left: 5rem;
     padding-top: 3rem
 }

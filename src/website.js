@@ -1,4 +1,5 @@
 export default startWebsite;
+import loadMenu from "./menu";
 
 function createHeader() {
   const header = document.createElement("div");
@@ -23,6 +24,7 @@ function createNav() {
   const menuButton = document.createElement("button");
   menuButton.classList.add("btn-menu");
   menuButton.innerHTML = "Menu";
+  menuButton.addEventListener('click', loadMenu);
   nav.appendChild(menuButton);
 
   const contactButton = document.createElement("button");
