@@ -20,7 +20,7 @@ function createNav() {
   const homeButton = document.createElement("button");
   homeButton.classList.add("btn-home");
   homeButton.innerHTML = "Home";
-  homeButton.addEventListener('click', getHomepage);
+  homeButton.addEventListener("click", getHomepage);
 
   const menuButton = document.createElement("button");
   menuButton.classList.add("btn-menu");
@@ -46,9 +46,8 @@ function createBody() {
 }
 
 function getHomepage() {
-  const mainBody = document.querySelector('.mainBody');
-  mainBody.innerHTML = '';
-  
+  const mainBody = document.querySelector(".mainBody");
+  mainBody.innerHTML = "";
 
   const restaurantName = document.createElement("h1");
   restaurantName.innerHTML = "Sweets Factory";
@@ -64,7 +63,6 @@ function getHomepage() {
   mainBody.appendChild(restaurantName);
   mainBody.appendChild(bodyTitle);
   mainBody.appendChild(bodyText);
-
 }
 
 function createFooter() {
@@ -74,7 +72,18 @@ function createFooter() {
   const signature = document.createElement("h4");
   signature.innerHTML = "Mateusz Kuruc 2023";
 
+  const githubImg = document.createElement('img');
+  githubImg.src = '../img/github.svg';
+ 
+  const githubLink = document.createElement('a');
+  githubLink.href = 'https://github.com/MateuszKuruc?tab=repositories';
+  githubLink.target = 'blank';
+
+  githubLink.appendChild(githubImg);
+
   footer.appendChild(signature);
+  // footer.appendChild(githubImg);
+  footer.appendChild(githubLink);
 
   return footer;
 }
