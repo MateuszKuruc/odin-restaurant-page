@@ -14,7 +14,6 @@ body {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 100vh; */
 }
 
 .mainBody {
@@ -23,16 +22,27 @@ body {
   gap: 0.75rem;
   flex: 1;
   min-height: 83vh;
-  padding-left: 5rem;
   padding-top: 3rem;
 }
 
-.mainBody > h1 {
+.homeText > h1 {
   text-transform: uppercase;
 }
 
-.mainBody > h2 {
+.homeText > h2 {
   color: purple;
+}
+
+.homeText > p {
+    flex: 1;
+    width: min(80%, 400px)
+}
+
+.homeText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 3rem;
 }
 
 .header {
@@ -42,6 +52,7 @@ body {
   align-items: center;
   background-color: purple;
   color: white;
+  gap: 0.5rem;
 }
 
 .navBar {
@@ -54,18 +65,32 @@ body {
 }
 
 .navBar > button {
-  width: 150px;
+  width: 100px;
+  height: 2.8rem;
   background-color: pink;
+  background-color: purple;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.navBar > button:hover {
+    background-color: pink;
+    color: black;
+}
+
+.active {
+    color: blue;
 }
 
 .bodyText {
-  width: 30%;
   line-height: 1.5rem;
-  /* padding-top: 0.75rem; */
   font-size: 18px;
   background-color: hsl(300, 100%, 25%, 70%);
   border-radius: 1rem;
   padding: 1rem;
+  color: white;
 }
 
 .footer {
@@ -100,13 +125,14 @@ body {
 
 .menuList {
   max-width: 100%;
-  align-self: center;
   background-color: hsl(300, 100%, 25%, 70%);
   display: grid;
   gap: 3rem;
   padding: 3rem;
   grid-template-columns: repeat(auto-fit, 300px);
   justify-content: center;
+  border: 3px solid pink;
+  align-self: center;
 }
 
 .contact {
@@ -127,4 +153,8 @@ body {
 .map {
     width: 70vw;
     border: 2px solid pink;
+}
+
+.header > img {
+    width: 3rem;
 }
