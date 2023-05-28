@@ -60,6 +60,5 @@ function loadMenu() {
 const mainBody = document.querySelector('.mainBody');
 mainBody.innerHTML = '';
 mainBody.appendChild(createMenu());
-console.log('elooo');
 }
 

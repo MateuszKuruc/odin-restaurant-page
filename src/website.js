@@ -72,17 +72,16 @@ function createFooter() {
   const signature = document.createElement("h4");
   signature.innerHTML = "Mateusz Kuruc 2023";
 
-  const githubImg = document.createElement('img');
-  githubImg.src = '../img/github.svg';
- 
-  const githubLink = document.createElement('a');
-  githubLink.href = 'https://github.com/MateuszKuruc?tab=repositories';
-  githubLink.target = 'blank';
+  const githubImg = document.createElement("img");
+  githubImg.src = "../img/github.svg";
+
+  const githubLink = document.createElement("a");
+  githubLink.href = "https://github.com/MateuszKuruc?tab=repositories";
+  githubLink.target = "blank";
 
   githubLink.appendChild(githubImg);
 
   footer.appendChild(signature);
-  // footer.appendChild(githubImg);
   footer.appendChild(githubLink);
 
   return footer;

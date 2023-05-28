@@ -1,117 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #content {
-    background-image: url('../img/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* height: 100vh; */
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
 }
 
 .mainBody {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    flex: 1;
-    min-height: 83vh;
-    padding-left: 5rem;
-    padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+  min-height: 83vh;
+  padding-left: 5rem;
+  padding-top: 3rem;
 }
 
 .mainBody > h1 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .mainBody > h2 {
-    color: purple;
+  color: purple;
 }
 
 .header {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: purple;
-    color: white;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  color: white;
 }
 
 .navBar {
-    background-color: purple;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem;
-    padding-bottom: 1vh;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  padding-bottom: 1vh;
 }
 
 .navBar > button {
-    width: 150px;
-    background-color: pink;
+  width: 150px;
+  background-color: pink;
 }
 
 .bodyText {
-    width: 30%;
-    line-height: 1.5rem;
-    /* padding-top: 0.75rem; */
-    font-size: 18px;
-    background-color: hsl(300, 100%, 25%, 70%);
-    border-radius: 1rem;
-    padding: 1rem;
+  width: 30%;
+  line-height: 1.5rem;
+  /* padding-top: 0.75rem; */
+  font-size: 18px;
+  background-color: hsl(300, 100%, 25%, 70%);
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .footer {
-    margin-top: 2rem;
-    height: 8vh;
-    background-color: purple;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 2rem;
+  height: 8vh;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .item {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    background-color: hsl(300, 100%, 25%, 90%);
-    width: 300px;
-    height: 450px;
-    align-self: center;
-    border: 1px solid pink;
-    align-items: center;
-    gap: 1rem;
-    line-height: 1.3rem;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: hsl(300, 100%, 25%, 90%);
+  width: 300px;
+  height: 450px;
+  align-self: center;
+  border: 1px solid pink;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1.3rem;
+  color: white;
 }
 
 .itemPic {
-    width: 200px;
+  width: 200px;
 }
 
 .menuList {
-    max-width: 100%;
-    align-self: center;
-    background-color: hsl(300, 100%, 25%, 70%);
-    display: grid;
-    gap: 3rem;
-    padding: 3rem;
-    grid-template-columns: repeat(auto-fit, 300px);
-    justify-content: center;
+  max-width: 100%;
+  align-self: center;
+  background-color: hsl(300, 100%, 25%, 70%);
+  display: grid;
+  gap: 3rem;
+  padding: 3rem;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
 }
 
-/* .mainBody {
-    background-color: green;
-    width: 400px;
-    display: flex;
+.contact {
+    background-color: hsl(300, 100%, 25%, 70%);
+    display: grid;
     align-self: center;
-    margin: 50px;
-} */
+    gap: 1rem;
+    width: 80vw;
+    justify-content: center;
+    padding: 5rem;
+    padding-top: 2rem;
+    border: 3px solid pink;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.map {
+    width: 70vw;
+    border: 2px solid pink;
+}
