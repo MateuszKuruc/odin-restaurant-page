@@ -24,7 +24,8 @@ body {
     flex: 1;
     min-height: 83vh;
     padding-left: 5rem;
-    padding-top: 3rem
+    padding-top: 3rem;
+    border: 3px solid blue;
 }
 
 .mainBody > h1 {
@@ -59,10 +60,13 @@ body {
 }
 
 .bodyText {
-    max-width: 30%;
+    width: 30%;
     line-height: 1.5rem;
-    padding-top: 0.75rem;
+    /* padding-top: 0.75rem; */
     font-size: 18px;
+    background-color: hsl(300, 100%, 25%, 70%);
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .footer {
@@ -81,7 +85,7 @@ body {
     padding: 1rem;
     background-color: hsl(300, 100%, 25%, 90%);
     width: 300px;
-    height: 400px;
+    height: 450px;
     align-self: center;
     border: 1px solid pink;
     align-items: center;
