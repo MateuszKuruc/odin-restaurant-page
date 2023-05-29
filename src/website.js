@@ -1,9 +1,8 @@
 export default startWebsite;
 import loadMenu from "./menu";
 import loadContact from "./contact";
-import Icon from './img/github.svg';
-import sweet from './img/sweet.png';
-// import cupImg from './img/background.jpg';
+import Icon from "./img/github.svg";
+import sweet from "./img/sweet.png";
 
 function createHeader() {
   const header = document.createElement("div");
@@ -104,7 +103,7 @@ function createFooter() {
 
 function startWebsite() {
   const content = document.getElementById("content");
- 
+
   content.appendChild(createHeader());
   content.appendChild(createNav());
   content.appendChild(createBody());
