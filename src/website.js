@@ -1,13 +1,16 @@
 export default startWebsite;
 import loadMenu from "./menu";
 import loadContact from "./contact";
+import Icon from './img/github.svg';
+import sweet from './img/sweet.png';
+// import cupImg from './img/background.jpg';
 
 function createHeader() {
   const header = document.createElement("div");
   header.classList.add("header");
 
   const restaurantLogo = document.createElement("img");
-  restaurantLogo.src = "../img/sweet.png";
+  restaurantLogo.src = sweet;
 
   const restaurantName = document.createElement("h1");
   restaurantName.innerHTML = "Sweets Factory";
@@ -84,7 +87,8 @@ function createFooter() {
   signature.innerHTML = "Mateusz Kuruc 2023";
 
   const githubImg = document.createElement("img");
-  githubImg.src = "../img/github.svg";
+  // githubImg.src = "../img/github.svg";
+  githubImg.src = Icon;
 
   const githubLink = document.createElement("a");
   githubLink.href = "https://github.com/MateuszKuruc?tab=repositories";
@@ -100,7 +104,7 @@ function createFooter() {
 
 function startWebsite() {
   const content = document.getElementById("content");
-
+ 
   content.appendChild(createHeader());
   content.appendChild(createNav());
   content.appendChild(createBody());

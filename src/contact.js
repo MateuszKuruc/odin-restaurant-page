@@ -1,4 +1,5 @@
 export default loadContact;
+import mapImg from './img/map.png';
 
 function createContact() {
   const contact = document.createElement("div");
@@ -12,7 +13,7 @@ function createContact() {
 
   const map = document.createElement("img");
   map.classList.add("map");
-  map.src = "../img/map.png";
+  map.src = mapImg;
 
   contact.appendChild(phone);
   contact.appendChild(address);
