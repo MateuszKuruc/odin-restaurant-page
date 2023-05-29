@@ -11,10 +11,11 @@ body {
 }
 
 #content {
-  background-image: url("../img/background.jpg");
+  background-image: url("./06c83094048b0fed5e2c.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .mainBody {
   display: flex;
