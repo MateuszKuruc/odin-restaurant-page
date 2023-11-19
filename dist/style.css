@@ -85,7 +85,7 @@ body {
   background-color: purple;
   color: white;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 900;
 }
 
@@ -128,10 +128,13 @@ body {
   gap: 1rem;
   line-height: 1.3rem;
   color: white;
+  border-radius: 0.5rem;
+  font-size: 18px;
 }
 
 .itemPic {
   width: 200px;
+  border-radius: 0.5rem;
 }
 
 .menuList {
@@ -144,6 +147,7 @@ body {
   justify-content: center;
   border: 3px solid pink;
   align-self: center;
+  border-radius: 0.5rem;
 }
 
 .contact {
